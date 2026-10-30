@@ -1,0 +1,12 @@
+services:
+  igg:
+    build: .
+    container_name: igg
+    restart: unless-stopped
+    ports:
+      - "8088:8088"
+    environment:
+      # Path inside the container; the host folder is mounted below
+      BASE_DIR: /data
+    volumes:
+      - ./share:/data:ro

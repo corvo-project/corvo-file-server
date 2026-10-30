@@ -1,0 +1,6 @@
+venv
+share
+data-crop
+__pycache__
+list.txt
+.env
